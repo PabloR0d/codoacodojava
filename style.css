@@ -22,14 +22,15 @@ body{
     z-index: 10;
     display: flex;
     justify-content: space-between;
-
 }
 
 .logo{
     align-items: center;
     margin-left: 40px;
     padding: 1.5rem 0;
-            
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
     }
         
 .btnSection{
@@ -37,12 +38,29 @@ body{
     align-items: center;
     margin-right: 40px;
     padding: 1.5rem 0;
-    border-radius: 5px;
-                         
+    border-radius: 5px;                 
 }       
 
+.banner{
+    width: 100%;
+}
+
+button{
+    background-color: #9f3647;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: white;
+    padding: 15px;
+    border: 1px solid #9f3647 ;
+    cursor: pointer;
+}
+
+button:hover{
+    
+}
+
 @media(max-width: 768px){
-    .body{
+    /* .body{
         height: initial;
         
         .topNav{
@@ -64,5 +82,5 @@ body{
 
 
 
-    }
+    } */
 }
