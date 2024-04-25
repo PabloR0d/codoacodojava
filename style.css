@@ -1,0 +1,86 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-color: #181419;
+    color: white;
+}
+
+/* HEADER */
+
+.topNav{
+    background-color: #9f3647;
+    color: #ffff;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    align-items: center;
+    margin-left: 40px;
+    padding: 1.5rem 0;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    }
+        
+.btnSection{
+    background-color: #9f3647;
+    align-items: center;
+    margin-right: 40px;
+    padding: 1.5rem 0;
+    border-radius: 5px;                 
+}       
+
+.banner{
+    width: 100%;
+}
+
+button{
+    background-color: #9f3647;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: white;
+    padding: 15px;
+    border: 1px solid #9f3647 ;
+    cursor: pointer;
+}
+
+button:hover{
+    
+}
+
+@media(max-width: 768px){
+    /* .body{
+        height: initial;
+        
+        .topNav{
+            margin-left: 10px;
+            margin-right: 10px;
+            flex-direction: column;
+            row-gap: 20px;
+
+            .logo{
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+
+            .btnSection{
+                padding: initial;
+                
+            }
+        }
+
+
+
+    } */
+}
