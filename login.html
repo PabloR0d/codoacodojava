@@ -9,13 +9,20 @@
 </head>
 <body>
      <div class="container">  
-  <form id="contact" action="" method="post">
+  <form id="contact" action="" method="get">
     <h3>Iniciar Sesion</h3>
-      <input placeholder="Mail" type="email" tabindex="2" required>
-      <input placeholder="Contraseña" type="password" tabindex="5" required>
+      <input id="email" placeholder="Mail" type="email" tabindex="2" required>
+
+          <div class="error-text"></div>
+
+      <input id="password" placeholder="Contraseña" type="password" tabindex="5" required>
+
+          <div class="error-text"></div>
+
       <button name="submit" type="submit" id="contact-submit" data-submit="...Enviando">Entrar</button>
       <a href="./register.html">Registarse</a>
   </form>
 </div>
+<script src="js/validarLogin.js"></script>
 </body>
 </html>

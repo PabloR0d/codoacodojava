@@ -9,15 +9,21 @@
 </head>
 <body>
      <div class="container">  
-  <form id="contact" action="" method="post">
+  <form id="contact" action="" method="get">
     <h3>Registro</h3>
-      <input placeholder="Nombre" type="text" tabindex="1" required autofocus>
-      <input placeholder="Apellido" type="text" tabindex="1" required autofocus>
-      <input placeholder="Mail" type="email" tabindex="2" required>
-      <input placeholder="Telefono" type="tel" tabindex="3" required>
-      <input placeholder="Contraseña" type="password" tabindex="5" required>
+      <input id="nombre" placeholder="Nombre" type="text" tabindex="1" required autofocus>
+      <div class="error-text"></div>
+      <input id="apellido" placeholder="Apellido" type="text" tabindex="1" required autofocus>
+      <div class="error-text"></div>
+      <input id="email" placeholder="Mail" type="email" tabindex="2" required>
+      <div class="error-text"></div>
+      <input id="telefono" placeholder="Telefono" type="tel" tabindex="3" required>
+      <div class="error-text"></div>
+      <input id="password" placeholder="Contraseña" type="password" tabindex="5" required>
+      <div class="error-text"></div>
       <button name="submit" type="submit" id="contact-submit" data-submit="...Enviando">Registarse</button>
   </form>
 </div>
+<script src="js/validarRegist.js"></script>
 </body>
 </html>
