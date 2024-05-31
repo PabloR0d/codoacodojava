@@ -50,7 +50,7 @@ body{
     align-items: center;
     margin-right: 40px;
     padding: 1.5rem 0;
-}       
+}
 
 button{
     background-color: #9f3647;
@@ -64,6 +64,10 @@ button{
     border: 1px solid #9f3647 ;
     cursor: pointer;
     border-radius: 7px;   
+}
+.btnSection a{
+    text-decoration: none;
+    color: white;
 }
 
 button:hover{
