@@ -69,15 +69,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	//validar formulario
 	const validarFormulario = () => {
 		let validar = true;
-
-    validar = validarCampo('nombre', 'Ingrese su nombre') && validar;
-
-    validar = validarCampo('apellido', 'Ingrese su apellido') && validar;
-
-    validar = validarCampo('telefono', 'Ingrese su teléfono') && validar;
-
+		validar = validarCampo('nombre', 'Ingrese su nombre') && validar;
+		validar = validarCampo('apellido', 'Ingrese su apellido') && validar;
+		validar = validarCampo('telefono', 'Ingrese su teléfono') && validar;
 		validar = validarEmail('email','el correo electronico no es valido') && validar;
-
 		validar = validarCampo('password','ingrese una contraseña') && validar;
 
 		return validar;
@@ -88,11 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	formulario.addEventListener('submit', event => {
 		event.preventDefault();
 		if (!validarFormulario()) {
-				event.preventDefault()
-				console.log("El formulario es invalido");
+			event.preventDefault()
+			console.log("El formulario es invalido");
 		} else {
-				event.preventDefault();
-				console.log("El formulario es valido");
+			event.preventDefault();
+			console.log("El formulario es valido");
+			window.location.href = "login.html";
 		}
 	})
 

@@ -80,14 +80,24 @@ document.addEventListener('DOMContentLoaded', () => {
 	//event listener (corrobora antes de enviar)
 	
 	formulario.addEventListener('submit', event => {
+
 		event.preventDefault();
 		if (!validarFormulario()) {
-				event.preventDefault()
-				console.log("El formulario es invalido");
-		} else {
+			event.preventDefault()
+			console.log("El formulario es invalido");
+			} else {
 				event.preventDefault();
 				console.log("El formulario es valido");
-		}
+				var logged = localStorage.setItem("validated", true)
+
+				var user = document.getElementById("email").value;
+				localStorage.setItem("email", user)
+
+				var isValidated = localStorage.getItem("validated")
+				console.log(user)
+				console.log(isValidated)
+				window.location.href = "movies.html";
+			}
 	})
 
 })
